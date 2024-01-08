@@ -1,18 +1,25 @@
 public enum UnitOfMeasurements {
   
-  METRE (1.0),
-  CENTIMETRE (0.01),
-  MILIMETRE (0.001);
+  METRE,
+  CENTIMETRE,
+  MILLIMETRE;
   
-  final double measurement;
   
-  UnitOfMeasurements(double measurement){
-    this.measurement = measurement;
+  
+  UnitOfMeasurements(){
+  
   }
 
-  public void MeasureUnit(){
-    System.out.println("hello there");
+  public boolean isCorrectUnit(String measurement){
+    measurement = measurement.replaceAll(" ","").toLowerCase();
+    String[] characterArray = measurement.split("");
+    
+    int lastChar = measurement.length() -1;
+    int penultimateChar = lastChar - 1;
+    String lastTwo = characterArray[penultimateChar] + characterArray[lastChar];
+    
+    if (lastTwo.equals("cm") || lastTwo.equals("mm")) return true;
+    return characterArray[lastChar].equals("m");
   }
   
-
 }
