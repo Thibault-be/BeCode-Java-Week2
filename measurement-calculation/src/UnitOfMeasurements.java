@@ -4,8 +4,6 @@ public enum UnitOfMeasurements {
   CENTIMETRE,
   MILLIMETRE;
   
-  
-  
   UnitOfMeasurements(){
   
   }

@@ -26,6 +26,8 @@ public class UserInterface {
       String[] lengthAndUnit = separateDoubleFromUnit(lengthInput);
       
       lengthUnit = lengthAndUnit[1];
+      String lengthUnit = UnitOfMeasurements.CENTIMETRE;
+      
       if (! (lengthUnit.equals("mm") || lengthUnit.equals("cm") || lengthUnit.equals("m"))){
         System.out.println("That wasn't valid input, please try again");
         continue;
