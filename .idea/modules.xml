@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/getting-unique-values/getting-unique-values.iml" filepath="$PROJECT_DIR$/getting-unique-values/getting-unique-values.iml" />
+      <module fileurl="file://$PROJECT_DIR$/measurement-calculation/measurement-calculation.iml" filepath="$PROJECT_DIR$/measurement-calculation/measurement-calculation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/week-2.iml" filepath="$PROJECT_DIR$/week-2.iml" />
+    </modules>
+  </component>
+</project>
