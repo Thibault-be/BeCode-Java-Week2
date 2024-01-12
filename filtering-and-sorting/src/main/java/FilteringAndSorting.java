@@ -48,9 +48,7 @@ public class FilteringAndSorting {
         data2018.add(tradeData);
       }
     }
-    System.out.println("reached end");
    Collections.sort(data2018, (dataOne, dataTwo) -> dataOne.getValue() - dataTwo.getValue());
-   System.out.println("sorted");
 
    for (TradeData tradeData : data2018){
      System.out.println(tradeData.toString());
