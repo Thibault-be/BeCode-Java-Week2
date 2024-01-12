@@ -4,9 +4,8 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.stream.Collectors;
-import java.util.HashMap;
 import java.util.Map;
-import java.util.List;
+
 
 public class TradeDifference{
 
@@ -41,9 +40,6 @@ public class TradeDifference{
     ArrayList<TradeData> data2019 = obtainYearlyData(data, "2019", "European Union (27)");
     ArrayList<TradeData> data2020 = obtainYearlyData(data, "2020", "European Union (27)");
 
-    //Map<String, List<TradeData>> monthlyTotals2019 = data2019.stream()
-    //                  .collect(Collectors.groupingBy(tradeData -> tradeData.getMonth()));
-    
     Map<String, Integer> monthlyTotals2019 = TradeData.calculateMonthlySum(data2019);
     Map<String, Integer> monthlyTotals2020 = TradeData.calculateMonthlySum(data2020);
 
@@ -51,15 +47,11 @@ public class TradeDifference{
     for (String key : monthlyTotals2019.keySet()){
       System.out.println("2019 - " + key + " - " + monthlyTotals2019.get(key) + " dollars.");
       System.out.println("2020 - " + key + " - " + monthlyTotals2020.get(key) + " dollars.");
+
+      System.out.println("The difference between 2019 and 2020 for this month was: " + (monthlyTotals2019.get(key) - monthlyTotals2020.get(key)) + " dollars.");
+      System.out.println();
     }
 
-
-
-    
-     //monthlyTotals2019 = data2019.stream()
-    //  .collect(Collectors.groupingBy(TradeData::getMonth, summingInt(TradeData::getValue)));
-
-     //groupingBy(String::length, filtering(s -> !s.contains("c"), toList()))
 
 
   }

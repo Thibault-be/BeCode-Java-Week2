@@ -100,7 +100,6 @@ public class TradeData {
       return this.date + " - " + this.year + " - " + this.country + " - " + this.value;
     }
 
-
     public static Map<String, Integer> calculateMonthlySum(List<TradeData> dataList) {
         return dataList.stream()
                 .collect(Collectors.groupingBy(TradeData::getMonth, Collectors.summingInt(TradeData::getValue)));
