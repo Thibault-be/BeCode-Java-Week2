@@ -1,0 +1,27 @@
+The Mission
+This is a hard challenge. 
+Your mission is to write a Java program that will compare the export values of the months in the year 2019 with the year 2020 for 
+the country 'European Union'. You will make use of HashMaps and the Collectors.groupingBy function available in the Collectors API of the streams API. 
+The 'key' function will be the month, and the 'value' function will be the sum of the export values for that month.
+
+Here's a clear step-by-step guide for your mission:
+
+Make sure you have access to the same CSV file used in the previous missions, which contains data about the effects of COVID-19 on trade.
+Create a new Java project and set up the necessary project structure.
+Define a class, let's call it TradeData, that represents the structure of the CSV data. 
+This class should have fields for each column in the CSV file, including the export values.
+
+Implement a method to read the CSV file and convert each line into an object of the TradeData class.
+Use the streaming API to filter the data for the country 'European Union' and create two separate streams for the years 2019 and 2020.
+
+For each stream, apply the Collectors.groupingBy function to group the data by month and calculate the sum of the export values for each month.
+ This will result in two HashMaps: one for the year 2019 and one for the year 2020.
+Print out the HashMaps for both years, displaying each month along with its corresponding sum of export values.
+
+Hint: Remember that you cannot perform this operation with only one stream. 
+You will need to create separate streams for the years 2019 and 2020 to get the desired result.
+Expected result: The program should print out each month for both years (2019 and 2020) along with their respective sum of export values, allowing you to compare the values between the two years.
+
+Remember to handle any potential exceptions or errors gracefully and ensure that your program provides meaningful output. Use comments to explain the different parts of your code and make it easy to understand and maintain.
+
+Good luck with this challenging mission! 🚀
