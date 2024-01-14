@@ -51,9 +51,6 @@ public class TradeDifference{
       System.out.println("The difference between 2019 and 2020 for this month was: " + (monthlyTotals2019.get(key) - monthlyTotals2020.get(key)) + " dollars.");
       System.out.println();
     }
-
-
-
   }
 
   public static ArrayList<TradeData> obtainYearlyData(AllData data, String year, String country){

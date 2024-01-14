@@ -1,0 +1,13 @@
+Define a generic class, let's call it Stack, that represents the custom stack data structure.
+This class should have methods to add (push) elements onto the stack, remove (pop) elements from the stack,
+check if the stack is empty, and get the size of the stack.
+
+Implement the push method to add elements to the top of the stack.
+You can use a dynamic data structure like an ArrayList or LinkedList to store the elements.
+
+Implement the pop method to remove and return the top element from the stack.
+Implement a method to check if the stack is empty and return a boolean indicating its status.
+Implement a method to get the size of the stack and return the number of elements currently in the stack.
+
+Test your custom stack implementation with various data types and verify that it follows the Last-In-First-Out (LIFO)
+principle.
